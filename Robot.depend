@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1636167201 source:c:\users\suwen\desktop\elec assignment\project\robot\formulas.c
+1636328823 source:c:\users\suwen\desktop\elec assignment\project\robot\formulas.c
 	"formulas.h"
 
 1634520217 c:\users\suwen\desktop\elec assignment\project\robot\formulas.h
 	"math.h"
 
-1636254807 source:c:\users\suwen\desktop\elec assignment\project\robot\main.c
+1636329514 source:c:\users\suwen\desktop\elec assignment\project\robot\main.c
 	"stdio.h"
 	"stdlib.h"
 	"sdl.h"
@@ -14,7 +14,6 @@
 	"formulas.h"
 	"wall.h"
 	"robot.h"
-	"math.h"
 
 1628614477 c:\users\suwen\desktop\elec assignment\project\sdl2-2.0.16\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -411,7 +410,7 @@
 	"wall.h"
 	"math.h"
 
-1636255124 source:c:\users\suwen\desktop\elec assignment\project\robot\robot.c
+1636329508 source:c:\users\suwen\desktop\elec assignment\project\robot\robot.c
 	"robot.h"
 
 1635837783 source:c:\users\suwen\desktop\elec assignment\project\robot\untitled1.c

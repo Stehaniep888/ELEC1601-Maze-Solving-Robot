@@ -1,12 +1,10 @@
-//LATEST ROBOT VERSION
-
 #include "robot.h"
 int a = 1;
 
 void setup_robot(struct Robot *robot){
-robot->x = 640-10-170;
+  robot->x = 640-10-270;
     robot->y = 460;
-    robot->true_x = 640-10-170;
+    robot->true_x = 640-10-270;
     robot->true_y = 460;
     robot->width = ROBOT_WIDTH;
     robot->height = ROBOT_HEIGHT;
@@ -15,7 +13,6 @@ robot->x = 640-10-170;
     robot->currentSpeed = 0;
     robot->crashed = 0;
     robot->auto_mode = 0;
-
     printf("Press arrow keys to move manually, or enter to move automatically\n\n");
 }
 int robot_off_screen(struct Robot * robot){
@@ -345,6 +342,7 @@ void robotAutoMotorMove(struct Robot * robot, int right_sensor, int front_sensor
 
 
     if((front_sensor == 0) && (right_sensor == 0)&& (a == 1)){
+            robot ->direction = RIGHT;
         if (robot ->currentSpeed < 3){
                 robot ->direction = UP;
                 printf("speed1: %d\n", robot ->currentSpeed);

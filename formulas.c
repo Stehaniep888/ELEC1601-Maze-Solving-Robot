@@ -12,20 +12,20 @@ int checkOverlap( int object1X, int object1width,
     max1st = object1X+object1width;
     min2nd = object2X;
     max2nd = object2X+object2width;
-    xOverlap = ((min2nd <= max1st) && (max1st <= max2nd))
-                || ((min1st <= min2nd) && (min2nd <= max1st))
-                || ((min2nd <= min1st) && (min1st <= max2nd))
-                || ((min1st <= max2nd) && (max2nd <= max1st));
+    xOverlap = ((min2nd <  max1st) && (max1st < max2nd))
+                || ((min1st < min2nd) && (min2nd < max1st))
+                || ((min2nd < min1st) && (min1st < max2nd))
+                || ((min1st < max2nd) && (max2nd < max1st));
 
 
     min1st = object1Y;
     max1st = object1Y+object1height;
     min2nd = object2Y;
     max2nd = object2Y+object2height;
-    yOverlap = ((min2nd <= max1st) && (max1st <= max2nd))
-                || ((min1st <= min2nd) && (min2nd <= max1st))
-                || ((min2nd <= min1st) && (min1st <= max2nd))
-                || ((min1st <= max2nd) && (max2nd <= max1st));
+    yOverlap = ((min2nd < max1st) && (max1st < max2nd))
+                || ((min1st < min2nd) && (min2nd < max1st))
+                || ((min2nd < min1st) && (min1st < max2nd))
+                || ((min1st < max2nd) && (max2nd < max1st));
 
     return (xOverlap && yOverlap);
 
